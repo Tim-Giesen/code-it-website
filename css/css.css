@@ -1,0 +1,676 @@
+body {
+    position: relative;
+
+}
+
+/* luckiest guy, or bangers font */
+
+/* Load in custom fonts here */
+
+
+
+/* @font-face {
+    font-family: bodyText;
+    src: url(fonts/Century-Gothic-Regular.ttf);
+} */
+:root  {
+    @font-face {
+        font-family: Cagliostro;
+        src: url(fonts/Cagliostro-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Lucky;
+        src: url(fonts/LuckiestGuy-Regular.ttf);
+    }
+/* 
+    @font-face {
+        font-family: MagicHat !important;
+        src: url(fonts/Magic-Hat.ttf) !important;
+        font-weight: normal !important;
+    } */
+
+    /* @font-face {
+        font-family: 'Magic Hat';
+        src: url('MagicHat.woff2') format('woff2'),
+            url('MagicHat.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    } */
+}
+
+
+
+
+
+.main-title {
+    font-family: Lucky;
+    font-weight: normal;
+    font-style: regular;
+}
+
+.sub-title {
+    font-family: bodyText;
+}
+
+.body-text {
+    font-family: Cagliostro;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background: brown;
+    position: fixed;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    background: purple;
+    margin: 10px;
+}
+
+.main-player {
+    height: 600px;
+    width: 100%;
+    background: red;
+    margin: 0 auto 50px;
+}
+
+video {
+    margin: 100px auto;
+    display: block;
+    width: 1056px;
+    height: 604px;
+}
+
+.workshops-wrapper {
+    margin: 0 auto;
+    height: 500px;
+    width: 1000px;
+    background: grey;
+}
+
+.container {
+    margin: 0 auto;
+    background: blue;
+    height: 100px;
+    align-content: center;
+    display: flex;
+}
+
+.w1 {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: black;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.mp-h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h3 {
+    margin: 100px auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+.team-wrapper {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto 100px;
+    background: green;
+}
+
+.photo-container{
+    display: flex;
+    margin: 0 auto;
+    height: 250px;
+    width: auto;
+    background: cyan;
+}
+
+.photo1 {
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin: 100px auto;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+footer {
+    position: relative;
+    background: black;
+    height: 300px;
+    width: 100%;
+    margin: 300px auto 0;
+}
+
+.footer-text {
+    margin-left: 175px;
+    color: white;
+    font-size: 1em;
+    clear: both;
+}
+
+.footer-text-2 {
+    position: absolute;
+    right: 175px;
+    clear: both;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* page 2 */
+
+.nav2 {
+    z-index: 6;
+    background: black;
+    height: 100px;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    background: purple;
+    height: 60px;
+    width: 60px;
+    margin: 20px 0 20px 40px;
+}
+
+.showcase-wrapper {
+    margin-top: 100px;
+    height: 333px;
+
+    overflow: hidden;
+
+}
+
+#sp1 {
+    height: 333px;
+    width: 455px;
+    background: yellow; 
+    float: right;
+}
+
+#sp2 {
+    height: 333px;
+    width: 455px;
+    background: grey;
+    float: right;
+    
+}
+
+#sp3 {
+    height: 333px;
+    width: 455px;
+    background: green;
+    float: right;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 100px;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.align-left {
+    text-align: start;
+}
+
+.h2-text-wrapper {
+    margin: 0 auto;
+    height: 255px;
+    text-align: center;
+
+}
+
+.wp-h2 {
+    /* width: 500px; */
+    /* margin: 70px auto;
+    text-align: center;
+    font-size: 35px;
+    display: inline-block; */
+    margin: 70px auto;
+    text-align: center;
+}
+
+.video-player-wrapper {
+    position: relative;
+    margin: 100px auto 100px;
+    height: 582px;
+    /* width: 1034px; */
+}
+
+.video-player {
+    margin: 0 auto;
+    background: pink;
+    height: 582px;
+    /* width: 1034px; */
+}
+
+.text {
+    /* margin-top: 70px; */
+    font-size: 20px;
+    text-align: center;
+}
+
+.content-box {
+    position: relative;
+    margin-top: 170px;
+    margin: auto;
+    padding: 100px;
+    padding-bottom: 120px;
+    /* display: inline-block; */
+}
+
+/* .padding-override {
+    position: relative;
+    margin-top: 170px;
+    margin: auto;
+    padding-bottom: 120px;
+    padding: auto;
+} */
+
+.wat-leer-je-image {
+    background-color: aqua; 
+    /* this becomes the background image  */
+}
+
+.wat-leer-je-h2 {
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+}
+
+.box-wrapper {  
+    position: relative;
+    margin: 29px auto;
+    width: fit-content;
+}
+
+.box {
+    background: brown;
+    position: relative;
+    display: inline-block;
+    height: 388px;
+    width: 356px;
+}
+
+.kosten-backplate {
+    background: white;
+}
+
+.kosten-wrapper {
+    background-color: grey;
+    position: relative;
+    margin: 166px auto 248px;
+    width: fit-content;
+}
+
+.kost {
+    position: relative;
+    background: cyan;
+    width: 417px;
+    height: 592px;
+    display: inline-block;
+}
+
+.ws-section-backplate {
+    position: relative;
+    background: black;
+    height: 2203px;
+}
+
+.h2-de-workshop {
+    /* top: 100px;
+    left: 100px; */
+    position: relative;
+    font-size: 35px;
+    color: white;
+}
+
+.ws-section-content-wrapper {
+    background: red;
+}
+.ws-section-content-wrapper:nth-of-type(even) {
+    background: orange;
+
+}
+
+.ws-section-content-box {
+    background: green;
+
+}
+
+
+.ws-section-content-box-text {
+
+}
+
+.h2-team {
+    margin: 100px auto 66px;
+}
+
+/* .team-pic-wrapper {
+    position: relative;
+    background: purple;
+    width: fit-content;
+    margin: 0 auto;
+
+} */
+
+.team-pic {
+    position: relative;
+    display: inline-block;
+    background: black;
+    width: 258px;
+    height: 376px;
+    background-image: url(/img/tim.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.delete-this {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE */
+@media only screen and (max-width: 719px) {
+    .content-box {
+        position: relative;
+        margin-top: 170px;
+        margin: auto;
+        /* padding: 100px; */
+        padding-bottom: 120px;
+    }
+
+    .box {
+        margin: auto;
+    }
+    .box-wrapper {
+        width: min-content;
+        margin: auto;
+    }
+
+    /* .video-player-wrapper {
+        width: min-content;
+        margin: auto;
+    }
+
+    .video-player {
+        margin: auto;
+    } */
+
+    video {
+        margin: 100px auto;
+        display: block;
+        width: 324px;
+        height: 182px;
+    }
+
+    .kosten-backplate {
+        padding: 0px;
+    }
+
+    .kosten-wrapper {
+        position: relative;
+        /* margin: auto; */
+        /* margin-bottom: 100px; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .kost:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .wp-h2 {
+        width: 300px;
+    }
+    
+    .h2-text-wrapper {
+        width: 412px;
+    }
+
+    .h2-de-workshop {
+        text-align: center;
+        left: 0px;
+    }
+
+    .team-pic-container {
+        position: relative;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 258px;
+    }
+
+    .team-pic-wrapper {
+        position: relative;
+    }
+
+    .team-pic {
+        
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 720px) and (max-width: 1365px) {
+
+
+    .content-box {
+        position: relative;
+        margin-top: 170px;
+        margin: auto;
+        /* padding: 100px; */
+        padding-bottom: 120px;
+    }
+
+    /* .video-player-wrapper {
+        width: min-content;
+        margin: auto;
+    }
+
+    .video-player {
+        margin: auto;
+    } */
+
+    video {
+        margin: 100px auto;
+        display: block;
+        width: 590px;
+        height: 335px;
+    }
+
+    .wp-h2 {
+        width: 500px;
+    }
+    
+    .h2-text-wrapper {
+        width: 612px;
+    }
+
+    .box {
+        margin: auto;
+    }
+    .box-wrapper {
+        width: min-content;
+        margin: auto;
+    }
+
+    .kosten-wrapper {
+        width: min-content;
+        margin: auto;
+    }
+
+    .kost:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .h2-de-workshop {
+        text-align: center;
+        left: 0px;
+    }
+
+    /* .ws-section-content-wrapper {
+        position: relative;
+        width: min-content;
+        margin: auto;
+    }
+
+    .ws-section-content-wrapper {
+        position: relative;
+        width: min-content;
+        margin: auto;
+        display: flex;
+    }
+
+    .ws-section-content-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 588px;
+        height: 331px;
+    }
+
+    #1st {
+        order: 1;
+    }
+
+    #2nd {
+        order: 2;
+    } */
+
+
+    .team-pic-wrapper {
+        position: relative;
+        display: flex;
+        background: purple;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+    }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1366px) {
+    .box:not(:first-child) {
+        margin-left: 33px;
+    }
+
+    .kost:not(:first-child) {
+        margin-left: 100px;
+    }
+
+    .ws-section-content-wrapper:not(:last-child) {
+        margin-bottom: 166px;
+    }
+
+    .ws-section-content-box:not(:first-child) {
+    margin-left: 100px;
+    }
+
+    .wp-h2 {
+        width: 500px;
+    }
+    
+    .h2-text-wrapper {
+        width: 612px;
+    }
+
+    .video-player {
+        width: 1034px
+    }
+
+    .ws-section-content-wrapper {
+        width: max-content;
+        margin: 0 auto;
+    }
+    .ws-section-content-box {
+        width: 583px;
+        height: 328px;
+        border: 1px solid white;
+        display: inline-block;
+
+    }
+
+    .team-pic-container {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        height: 376px;
+     }
+    
+
+    .team-pic-wrapper {
+        position: relative;
+        display: flex;
+        background: purple;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+    }
+}
