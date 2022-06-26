@@ -18,15 +18,13 @@
     --img-card-width: var(--box-sm-width);
 }
 
-/* #region Font Faces */
-
+/* Font Faces */
 /* Load in custom fonts here */
 @font-face {
     font-family: Cagliostro;
     src: url(/fonts/Cagliostro-Regular.ttf);
 }
 
-/* luckiest guy, or bangers font */
 @font-face {
     font-family: 'Luckiest Guy';
     src: url('/fonts/LuckiestGuy-Regular.woff2') format('woff2'),
@@ -44,11 +42,9 @@
     font-style: normal;
     font-display: swap;
 }
+/* End Font Faces */
 
-/* #endregion Font Faces */
-
-/* #region General Font */
-
+/* General Font */
 html {
     font-size: 18px;
     scroll-behavior: smooth;
@@ -115,11 +111,9 @@ h3 {
 .font-bg-highlight * {
     background-color: #4488c7;
 }
+/* End General Font */
 
-/* #endregion General Font */
-
-/* #region General Utilities */
-
+/* General Utilities */
 .h-space-lg-desktop:not(:first-child) {
     margin-left: var(--h-space-lg-desktop);
 }
@@ -181,11 +175,9 @@ h3 {
 .img-card p {
     padding: 1.5rem 0;
 }
+/* End Layout Utilities */
 
-/* #endregion Layout Utilities */
-
-/* #region Content Section */
-
+/* Content Section */
 .content-section {
     position: relative;
     width: 100%;
@@ -211,11 +203,9 @@ h3 {
     width: calc(var(--box-sm-width) - var(--box-padding) * 2);
     padding: 33px;
 }
+/* End Content Section */
 
-/* #endregion Content Section */
-
-/* #region Controls */
-
+/* Controls */
 .elevated-button {
     font-family: 'Luckiest Guy';
     color: #fff;
@@ -282,11 +272,9 @@ h3 {
     margin-top: .5rem;
     margin-bottom: 0rem;
 }
+/* End Controls */
 
-/* #endregion Controls */
-
-/* #region Nav */
-
+/* Nav */
 nav {
     width: 100%;
     height: var(--nav-height);
@@ -385,40 +373,37 @@ img.logo {
 .dropdown .dropdown-content a:active {
     text-decoration: underline;
 }
+/* End Nav */
 
-/* #endregion Nav */
-
-/* #region Section: Wat Leer Je */
-
+/* Section: Wat Leer Je */
 .wat-leer-je-section h2 {
     position: relative;
     text-align: center;
     font-size: 3.4rem;
+    
 }
 .wat-leer-je-section .box-sm {
     height: 360px;
+    line-height: 1.688rem;
 }
+/* End of Section: Wat Leer Je */
 
-/* #endregion Section Wat Leer Je */
-
-/* #region Section: Kosten */
-
+/* Section: Kosten */
 .content-section.kosten-section * {
     text-align: start;
 }
 .content-section.kosten-section p {
     padding-bottom: 33px;
+    line-height: 1.688rem;
 }
 .kost {
     position: relative;
     background: #fff;
     display: inline-block;
 }
+/* End of Section: Kosten Section */
 
-/* #endregion Kosten Section */
-
-/* #region Section: Workshop */
-
+/* Section: Workshop */
 .workshop-section {
     position: relative;
     background: #131313;
@@ -436,6 +421,8 @@ img.logo {
 }
 .workshop-section p {
     font-size: 1.75rem;
+    line-height: 2.313rem;
+
 }
 
 .workshop-section-content-wrapper:first-of-type {
@@ -445,11 +432,9 @@ img.logo {
 .workshop-section-content-wrapper:not(:first-of-type) {
     margin-top: 166px;
 }
+/* End of Section: Workshop */
 
-/* #endregion Section: Workshop */
-
-/* #region Section: Team */
-
+/* Section: Team */
 .team-section h2 {
     margin: auto;
     margin-bottom: 66px;
@@ -479,12 +464,9 @@ img.logo {
     /* margin: auto; */
     margin-bottom: 0;
 }
+/* End of Section: Team */
 
-/* #endregion Section: Team */
-
-/* #region Footer */
-
-
+/* Footer */
 footer {
     position: relative;
     background: #131313;
@@ -497,16 +479,15 @@ footer a {
     color: #fff;
     font-size: 1em;
     text-align: start;
+    line-height: 1.688rem;
 }
 
 footer .font-bold {
     font-size: 1.25rem;
 }
+/* End Footer */
 
-/* #endregion Footer */
-
-/* #region Section: Showcase */
-
+/* Section: Showcase */
 .content-section.showcase-section {
     margin-top: var(--nav-height);
 }
@@ -525,11 +506,9 @@ footer .font-bold {
 .showcase-section img {
     height: 100%;
 }
+/* End of Section: Showcase */
 
-/* #endregion Section: Showcase */
-
-/* #region Section: Preview */
-
+/* Section: Preview */
 .preview-section h1 {
     margin: 0 auto;
     text-align: center;
@@ -542,10 +521,14 @@ footer .font-bold {
 .preview-section .description {
     margin: 0 auto;
     text-align: center;
-    font-size: 20pt;
+    font-size: 20pt; 
 }
+
+.text {
+    line-height: 1.688rem;
+}
+
 .preview-section .video-player {
     margin: 100px auto;
 }
-
-/* #endregion Section: Preview */
+/* End of Section: Preview */

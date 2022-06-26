@@ -1,6 +1,4 @@
-
-/* #endregion Section: Samen Leren */
-
+/* Section: Samen Leren */
 .content-section.samen-leren-section  {
     margin-top: var(--nav-height);
     padding: 120px 0 200px 0;
@@ -10,11 +8,9 @@
     margin-top: 0;
     padding-bottom: 50px;
 }
+/* End of Section: Samen Leren */
 
-/* #endregion Section: Samen Leren */
-
-/* #region Section: Workshop Preview */
-
+/* Section: Workshop Preview */
 .workshop-preview-section h2 {
     font-size: 3.4rem;
 }
@@ -22,11 +18,9 @@
 .workshop-preview-section .box-wrapper {
     margin-bottom: 40px;
 }
+/* End of Section: Workshop Preview */
 
-/* #endregion Section: Workshop Preview */
-
-/* #region Section: Lees Meer */
-
+/* Section: Lees Meer */
 .content-section.lees-meer-section {
     padding: 0;
     width: calc(var(--content-width) - var(--content-padding) * 2);
@@ -72,5 +66,4 @@
 .lees-meer-section .lees-meer-text a.rounded-button::after {
     line-height: 3.9rem;
 }
-
-/* #endregion Section: Lees Meer */
+/* End of Section: Lees Meer */
