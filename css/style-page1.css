@@ -1,0 +1,76 @@
+
+/* #endregion Section: Samen Leren */
+
+.content-section.samen-leren-section  {
+    margin-top: var(--nav-height);
+    padding: 120px 0 200px 0;
+}
+
+.samen-leren-section h1 {
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+/* #endregion Section: Samen Leren */
+
+/* #region Section: Workshop Preview */
+
+.workshop-preview-section h2 {
+    font-size: 3.4rem;
+}
+
+.workshop-preview-section .box-wrapper {
+    margin-bottom: 40px;
+}
+
+/* #endregion Section: Workshop Preview */
+
+/* #region Section: Lees Meer */
+
+.content-section.lees-meer-section {
+    padding: 0;
+    width: calc(var(--content-width) - var(--content-padding) * 2);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}
+
+.content-section.lees-meer-section .content {
+    text-align: center;
+}
+.content-section.lees-meer-section p {
+    text-align: start;
+}
+
+.lees-meer-section .content {
+    border-bottom: 1px solid #000;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.lees-meer-section img {
+    width: 150px;
+    height: 150px;
+    padding-bottom: var(--v-space-sm-mobile);
+}
+
+.lees-meer-text {
+    margin-left: 1.5rem;
+}
+.lees-meer-section .font-bold,
+.lees-meer-section .font-bold * {
+    font-size: 2.5rem;
+}
+.lees-meer-section .lees-meer-text a.rounded-button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: underline;
+    margin: 0;
+    padding-left: 0;
+    line-height: 4rem;
+}
+.lees-meer-section .lees-meer-text a.rounded-button::after {
+    line-height: 3.9rem;
+}
+
+/* #endregion Section: Lees Meer */

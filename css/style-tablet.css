@@ -1,0 +1,63 @@
+/* TABLET */
+@media only screen and (min-width: 720px) and (max-width: 1365.999px) {
+    :root  {
+        --content-padding: 56px;
+        --content-width: 720px;
+        --h-space-sm-desktop: 0;
+        --h-space-lg-desktop: 0;
+        --video-width: 590px;
+        --img-card-width: var(--video-width);
+    }
+
+    .content-section {
+        position: relative;
+        margin: auto;
+        /* padding: 100px; */
+        padding-bottom: 120px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .video-player {
+        margin: 100px auto;
+        display: block;
+    }
+
+    .box-sm {
+        margin: auto;
+    }
+    .box-wrapper {
+        width: min-content;
+    }
+
+    .kost {
+        width: calc(450px - 33px * 2);
+    }
+    .kost:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .workshop-section h2 {
+        text-align: center;
+        left: 0px;
+    }
+
+    .team-pic-wrapper {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+    }
+
+
+}
+

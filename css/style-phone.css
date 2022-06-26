@@ -1,0 +1,64 @@
+/* PHONE */
+@media only screen and (max-width: 719.999px) {
+
+    :root  {
+        --content-padding: 0px;
+        --content-width: 324px;
+        --h-space-sm-desktop: 0;
+        --h-space-lg-desktop: 0;
+        --v-space-sm-mobile: 33px;
+        --box-sm-width: var(--content-width);
+        --video-width: var(--content-width);
+        --img-card-width: var(--content-width);
+    }
+
+    .content-section {
+        position: relative;
+        margin: auto;
+        padding-bottom: 120px;
+    }
+    .content {
+        margin: auto;
+        width: var(--content-width);
+        padding: 0;
+    }
+
+    .box-wrapper {
+        width: min-content;
+    }
+    .box-sm {
+        margin: auto;
+    }
+
+    .workshop-section-content-box  .video-player,
+    .video-player {
+        margin: 100px auto;
+        display: block;
+    }
+
+    .kost:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .preview-section .description {
+        width: 300px;
+    }
+
+    .workshop-section h2 {
+        text-align: center;
+        left: 0px;
+    }
+
+    .team-pic-container {
+        position: relative;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 258px;
+    }
+
+    .team-pic-wrapper {
+        position: relative;
+    }
+}

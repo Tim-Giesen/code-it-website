@@ -5,144 +5,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="font" href="fonts/Cagliostro-Regular.ttf">
-    <link rel="font" href="fonts/LuckiestGuy-Regular.ttf">
-    <!-- <link rel="font" href="fonts/MagicHat.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="font" href="fonts/MagicHat.woff" as="font" type="font/woff" crossorigin> -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-desktop.css">
+    <link rel="stylesheet" href="/css/style-tablet.css">
+    <link rel="stylesheet" href="/css/style-phone.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <title>Comic Code Workshop</title>
 </head>
 
-<body>
-
+<body class="star-bg-img">
     <!-- Navbar -->
 
-    <nav class="nav2">
-        <div class="logo"></div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <nav class="nav drop-shadow">
+        <a class="logo" href="/index.html"><img class="logo" src="/img/logo.svg" alt="CODE IT"></a>
+        <div class="dropdown">
+            <button class="dropbtn"><img src="/img/hamburger-menu.svg"></button>
+            <div class="dropdown-content">
+                <a class="font-bold font-2rem" href="#workshop">WORKSHOP</a>
+                <a class="font-bold font-2rem" href="#kosten">KOSTEN</a>
+                <a class="font-bold font-2rem" href="#team">TEAM</a>
+                <a class="font-bold font-2rem" href="#contact">CONTACT</a>
+            </div>
+        </div>
     </nav>
-
-    <div class="showcase-wrapper">
-        <div id="sp1"></div>
-        <div id="sp2"></div>
-        <div id="sp3"></div>
-
-    </div>
 
     <!-- Intro Text -->
 
-    <div class="content-box">
-        <h1 class="main-title">WORKSHOP COMIC CODE</h1>
+    <!-- It's not standard to set both width and padding/margin. Width is always applied excl. paddings -->
 
-        <!-- <div class="video-player-wrapper">
-            <div class="video-player"></div>
-        </div> -->
+    <div class="content-section showcase-section">
+        <div class="content">
+            <img src="/img/1-1934566390.png">
+            <img src="/img/LOD_workshop-3085577265.jpg">
+            <img src="/img/th-541349694.jpg">
+            <img src="/img/bg-lessons-section.png">
+        </div>
+    </div>
+    
+    <div class="content-section preview-section">
+        <div class="content">
+            <h1 id="workshop">WORKSHOP COMIC CODE</h1>
 
-        <video width="320" height="240" controls autoplay>
-            <source src="https://vimeo.com/703286186">
-          </video>
-
-        <div class="h2-text-wrapper">
-            <h2 class="wp-h2">Help jij Aardje en roboto
-                Tot een betere wereld? </h2>
-
-            <p class="text">De kinderen leren door het verhaal heen de basisprincipes van coderen.
-                Hierin maken zij kennis met de basisvormen, toevoegen van kleuren
-                en krijgen zij nieuwe inzichten in de technische wereld.
-            </p>
+            <!-- https://vimeo.com/703286186 -->
+            <!-- https://vimeo.com/717905505 -->
+            <iframe src="https://player.vimeo.com/video/717905505?h=992372af55" class="video-player drop-shadow" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        
+            <div class="description">
+                <h2 class="wp-h2">Help jij Aardje en roboto Tot een betere wereld?</h2>
+    
+                <p class="text">
+                    De kinderen leren door het verhaal heen 
+                    de basisprincipes van coderen. Hierin maken zij kennis 
+                    met de basisvormen, toevoegen van kleuren en krijgen 
+                    zij nieuwe inzichten in de technische wereld.
+                </p>
+            </div>
         </div>
     </div>
 
     <!-- "Wat leer je?" Part -->
 
-    <div class="content-box wat-leer-je-image">
+    <div class="content-section wat-leer-je-section section-bg-img-a">
+        <div class="content">
+            <h2 class="font-white">WAT LEER JE</h2>
 
-        <h2 class="wat-leer-je-h2">WAT LEER JE</h2>
-
-
-        <div class="box-wrapper">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box-wrapper">
+                <div class="box-sm drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <h3>roosterpunten</h3>
+                    <p>
+                        Om de vormen te plaatsen moet er een basiskennis 
+                        van roosterpunten bijgebracht worden. Deze wordt 
+                        ook opgenomen in de cursus, de roosterpunten 
+                        worden op papier en op de computer geoefend.
+                    </p>
+                </div>
+                <div class="box-sm drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <h3>Basisvormen</h3>
+                    <p>
+                        In het programma P5.JS leren de kinderen 
+                        basisvormen te coderen. Hierbij leren ze de 
+                        benamingen in code en deze op correcte wijze 
+                        te plaatsen.
+                    </p>
+                </div>
+                <div class="box-sm drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <h3>technisch inzicht</h3>
+                    <p>
+                        De kinderen leren een basis van coderen. Hiermee 
+                        leren zij hoe websites zijn opgebouwd en wat je 
+                        met technische vakken zou kunnen doen en maken. 
+                    </p>
+                </div>
+            </div>
         </div>
-
     </div>
 
     <!-- Cost Part -->
 
-    <div class="content-box kosten-backplate">
-        <div class="kosten-wrapper">
-
-            <div class="kost"></div>
-            <div class="kost"></div>
+    <div id="kosten" class="content-section kosten-section">
+        <div class="content">
+            <div class="box-wrapper">
+                <div class="box-sm drop-shadow kost h-space-lg-desktop">
+                    <h3>KOSTEN</h3>
+                    <p>
+                        Deze kosten zijn berekend op het
+                        materiaal dat geleverd wordt.
+                    </p>
+                    <p><span class="font-bold font-2rem">€80,00</span><br/>
+                        <span>max 30 kinderen</span></p>
+                    <p><span class="font-bold font-2rem">€119,99</span><br/>
+                        <span>max 40 kinderen</span></p>
+                    <p>
+                        Als u geïnteresseerd bent, stuur ons
+                        een mail op het aangeven mailadres.
+                    </p>
+                    <a class="elevated-button" href="mailto:code-it.zuyd@hotmail.com">
+                        CODE-IT.ZUYD@HOTMAIL.COM
+                    </a>
+                </div>
+                <div class="box-sm drop-shadow kost h-space-lg-desktop">
+                    <h3>KOSTEN</h3>
+                    <p>
+                        Deze kosten zijn berekend op de
+                        hulp van ons team en het materiaal
+                        dat aangeboden wordt.
+                    </p>
+                    <p><span class="font-bold font-2rem">€119,99</span><br/>
+                        <span>max 30 kinderen</span></p>
+                    <p><span class="font-bold font-2rem">€159,99</span><br/>
+                        <span>max 40 kinderen</span></p>
+                    <p>
+                        Als u geïnteresseerd bent, stuur ons
+                        een mail op het aangeven mailadres.
+                    </p>
+                    <a class="elevated-button" href="mailto:code-it.zuyd@hotmail.com">
+                        CODE-IT.ZUYD@HOTMAIL.COM
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Workshop part -->
 
-    <div class="content-box ws-section-backplate">
-        <h2 class="h2-de-workshop align-left">DE WORKSHOP</h2>
-        <div class="ws-section-content-wrapper">
-            <div class="ws-section-content-box" id="1st"></div>
-            <div class="ws-section-content-box delete-this" id="2nd"></div>
+    <div class="content-section workshop-section">
+        <div class="content">
+            <h2 class="align-left">DE WORKSHOP</h2>
+            <div class="workshop-section-content-wrapper">
+                <div class="workshop-section-content-box">
+                    <iframe src="https://player.vimeo.com/video/717905505?h=992372af55" class="video-player drop-shadow" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="workshop-section-content-box">
+                    <h3>
+                        1. UITLEG PROGRAMMA P5.JS
+                    </h3>
+                    <p>
+                        In deze tutorial laten we zien hoe het
+                        Programma werkt waar de kinderen in
+                        Gaan coderen.
+                        Denk hierbij aan het Inloggen, openen
+                        van bestanden,
+                        de Werking van de Setup en draw. Het
+                        Runnen en stoppen in p5.js
+                    </p>
+                </div>
+            </div>
+            <div class="workshop-section-content-wrapper">
+                <div class="workshop-section-content-box alternate">
+                    <h3>2. BASISVORMEN MAKEN</h3>
+                    <p>
+                        Nadat de uitleg over het programma
+                        P5.JS
+                        is besproken kunnen we met het
+                        programma aan de slag.
+                        Hierin leren we de benamingen
+                        van de basisvormen in code en deze
+                    </p>
+                </div>
+                <div class="workshop-section-content-box">
+                    <iframe src="https://player.vimeo.com/video/717905505?h=992372af55" class="video-player drop-shadow" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="workshop-section-content-wrapper">
+                <div class="workshop-section-content-box">
+                    <iframe src="https://player.vimeo.com/video/717905505?h=992372af55" class="video-player drop-shadow" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="workshop-section-content-box">
+                    <h3>3. KLEUREN</h3>
+                    <p>
+                        In het vorige onderdeel heb je geleerd
+                        hoe je gebruik maakt van vormen in
+                        p5.js.
+                        In deze tutorial leer je hoe
+                        je gebruik maakt van kleuren zodat
+                        de vormen die je hebt gemaakt veel
+                        unieker zijn. Je leert hoe je gebruik
+                        maakt van RGB waardes in p5.js. Zo
+                        kun je jou code veel specifieker maken.
+                    </p>
+                </div>
+            </div>
+            <div class="workshop-section-content-wrapper">
+                <div class="workshop-section-content-box alternate">
+                    <h3>4. SPEURTOCHT</h3>
+                    <p>
+                        De cursus wordt afgerond met een
+                        Interactief onderdeel. Hierin gaan
+                        de kinderenEen speurtocht doen,
+                        hoe deze in zijn werkingGaat wordt
+                        uitgelegd in deze tutorial.
+                        Zo kraken zij de code om de slechterik
+                    </p>
+                </div>
+                <div class="workshop-section-content-box">
+                    <iframe src="https://player.vimeo.com/video/717905505?h=992372af55" class="video-player drop-shadow" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-        <div class="ws-section-content-wrapper">
-            <div class="ws-section-content-box
-            delete-this"></div>
-            <div class="ws-section-content-box"></div>
-        </div>
-        <div class="ws-section-content-wrapper">
-            <div class="ws-section-content-box"></div>
-            <div class="ws-section-content-box
-            delete-this"></div>
-        </div>
-        <div class="ws-section-content-wrapper">
-            <div class="ws-section-content-box
-            delete-this"></div>
-            <div class="ws-section-content-box"></div>
-        </div>
-    </div>
     </div>
 
     <!-- Team Part -->
 
-
-    <div class="content-box>">
-        <h2 id="team-title-h2" class="h2-team">TEAM CODE-IT</h2>
+    <div class="content-section team-section">
+        <h2 id="team">TEAM CODE-IT</h2>
         <div class="team-pic-container">
-
             <div class="team-pic-wrapper">
-                <div class="team-pic">
-                    <h3></h3>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Isis Cox</h3>
+                    </div>
                 </div>
-                <div class="team-pic">
-                    <h3></h3>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Seb Greefkens</h3>
+                    </div>
                 </div>
             </div>
 
             <div class="team-pic-wrapper">
-                <div class="team-pic">
-                    <h3></h3>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Ridvan Kabakci</h3>
+                    </div>
                 </div>
-                <div class="team-pic">
-                    <h3></h3>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Tim Giesen</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!-- Footer -->
 
-    <footer>
-        <p class="footer-text">footer text</p>
-        <p class="footer-text-2">footer text</p>
+    <footer id="contact">
+        <p>
+            <br/>
+            <span class="font-bold">Mail:</span> <a href="mailto:code-it.zuyd@hotmail.com">code-it.zuyd@hotmail.com</a><br/>
+            <br/>
+            <span class="font-bold">Contacten:</span><br/>
+            Isis Cox<br/>
+            Ridvan Kabakci<br/>
+            Tim Giesen<br/>
+            Seb Greefkens
+        </p>
+        <p>
+            <br/>
+            Dit Project is uitgevoerd in opdracht van Zuyd<br/>
+            Hogeschool, MAMDT<br/>
+            <br/>
+            Opleiding Communication & Multimedia Design<br/>
+        </p>
+        <p>
+            <br/>
+            © 2022
+        </p>
     </footer>
 
 </body>

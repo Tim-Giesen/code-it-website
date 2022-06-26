@@ -1,68 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="workshop-page" href="../comic-code/workshop-page.html"> -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="preload" href="fonts/MagicHat.woff2" as="font" type="font/woff2" crossorigin>
-    <title>Code IT</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-desktop.css">
+    <link rel="stylesheet" href="/css/style-tablet.css">
+    <link rel="stylesheet" href="/css/style-phone.css">
+    <link rel="stylesheet" href="/css/style-page1.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Comic Code Workshop</title>
 </head>
-<body>
-    <nav class="header">
-        <div class="header-logo">
 
-        </div>
-        <div class="list-wrapper">
-            <ul class="navlist">
-                <li>Zoeken</li>
-                <li>Workshop</li>
-                <li>Team</li>
-                <li>Contact</li>
-            </ul>
+<body class="star-bg-img">
+    <!-- Navbar -->
+
+    <nav class="nav drop-shadow">
+        <a class="logo" href="/index.html"><img class="logo" src="/img/logo.svg" alt="CODE IT"></a>
+        <div class="dropdown">
+            <button class="dropbtn"><img src="/img/hamburger-menu.svg"></button>
+            <div class="dropdown-content">
+                <a class="font-bold font-2rem" href="#workshop">WORKSHOP</a>
+                <a class="font-bold font-2rem" href="/workshop-page.html#kosten">KOSTEN</a>
+                <a class="font-bold font-2rem" href="#team">TEAM</a>
+                <a class="font-bold font-2rem" href="#contact">CONTACT</a>
+            </div>
         </div>
     </nav>
 
-    <div class="main-player">
+    <!-- Intro Text -->
 
-    </div>
+    <div class="content-section samen-leren-section section-bg-img-a">
+        <div class="content">
+            <h1 class="font-white">
+                ZULLEN WE SAMEN<br/>
+                LEREN CODEREN?
+            </h1>
 
-    <a href="https://tim-giesen.github.io/code-it-website/workshop-page.html">Workshop page placeholder link</a>
-
-
-    <h2 class="mp-h2">Workshops</h2>
-    <div class="workshops-wrapper">
-        <div class="container">
-
-            <div class="w1"></div>
-            <div class="w1"></div>
-            <div class="w1"></div>
-            <div class="w1"></div>
-
+            <a class="elevated-button" href="/workshop-page.html">
+                KLIK HIER!
+            </a>
         </div>
     </div>
 
-    <h3>Hier komt die tussentitel!</h2>
+    <!-- Workshops Preview -->
 
-    <div class="team-wrapper">    
-    <h2>Het Team</h2>
-    <div class="photo-container">
-        <div class="photo1"></div>
-        <div class="photo1"></div>
-        <div class="photo1"></div>
-        <div class="photo1"></div>
+    <div class="content-section workshop-preview-section">
+        <div class="content">
+            <h2 id="workshop">
+                ONZE MEEST POPULAIRE<br/>
+                WORKSHOPS
+            </h2>
+
+            <div class="box-wrapper">
+                <div class="box-sm img-card drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <img src="/img/1-1934566390.png">
+                    <p>
+                        <span class="font-bold">WORKSHOP GEN-ART</span><br/>
+                        Duur workshop 2 uur.<br/>
+                        Voor kinderen van 8 tot 14 jaar.
+                    </p>
+                </div>
+                <div class="box-sm img-card drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <img src="/img/LOD_workshop-3085577265.jpg">
+                    <p>
+                        <span class="font-bold">WORKSHOP BLOGGEN</span><br/>
+                        Duur workshop 2 uur.<br/>
+                        Voor kinderen van 8 tot 14 jaar.
+                    </p>
+                </div>
+                <div class="box-sm img-card drop-shadow h-space-sm-desktop v-space-sm-mobile">
+                    <img src="/img/th-541349694.jpg">
+                    <p>
+                        <span class="font-bold">WORKSHOP COMIC-CODE</span><br/>
+                        Duur workshop 2 uur.<br/>
+                        Voor kinderen van 8 tot 14 jaar.
+                    </p>
+                </div>
+            </div>
+
+            <a class="rounded-button font-bold" href="/workshop-page.html">MEER</a>
+        </div>
     </div>
 
+    <!-- Lees Meer -->
+    <div class="content-section lees-meer-section">
+        <div class="content">
+            <img src="/img/lees-meer.svg">
+            <div class="lees-meer-text">
+                <p class="font-bold font-2rem">
+                    WE WERKEN AAN <span class="font-bg-highlight">EEN NIEUWE WORKSHOP</span>
+                    GERICHT NAAR KINDEREN VAN DE
+                    BASISSCHOOL.
+                </p>
+                <p>
+                    <a class="rounded-button font-bold" href="/workshop-page.html">LEES MEER</a>
+                </p>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p class="footer-text">footer text</p>
-        <p class="footer-text-2">footer text</p>
+    <!-- Team Part -->
+    <div class="content-section team-section">
+        <h2 id="team">TEAM CODE-IT</h2>
+        <div class="team-pic-container">
+            <div class="team-pic-wrapper">
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Isis Cox</h3>
+                    </div>
+                </div>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Seb Greefkens</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-pic-wrapper">
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Ridvan Kabakci</h3>
+                    </div>
+                </div>
+                <div class="team-pic-padding">
+                    <div class="team-pic">
+                        <h3>Tim Giesen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>
+            <br/>
+            <span class="font-bold">Mail:</span> <a href="mailto:code-it.zuyd@hotmail.com">code-it.zuyd@hotmail.com</a><br/>
+            <br/>
+            <span class="font-bold">Contacten:</span><br/>
+            Isis Cox<br/>
+            Ridvan Kabakci<br/>
+            Tim Giesen<br/>
+            Seb Greefkens
+        </p>
+        <p>
+            <br/>
+            Dit Project is uitgevoerd in opdracht van Zuyd<br/>
+            Hogeschool, MAMDT<br/>
+            <br/>
+            Opleiding Communication & Multimedia Design<br/>
+        </p>
+        <p>
+            <br/>
+            © 2022
+        </p>
     </footer>
 
-
-    
 </body>
+
 </html>

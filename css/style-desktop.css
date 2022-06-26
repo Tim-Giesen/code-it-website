@@ -1,0 +1,110 @@
+/* DESKTOP / LAPTOP */
+@media only screen and (min-width: 1366px) {
+    :root  {
+        --content-padding: 100px;
+        --content-width: 1366px;
+        --h-space-sm-desktop: 33px;
+        --h-space-lg-desktop: 100px;
+        --v-space-sm-mobile: 33px;
+        --v-space-sm-mobile: 0px;
+        --video-width: 1034px;
+    }
+
+    .dropdown {
+        width: max-content;
+    }
+
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .dropdown .dropdown-content {
+        height: var(--nav-height) !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        top: 0;
+        right: 0;
+        width: max-content;
+        padding-right: 24px;
+    }
+
+    .dropdown .dropdown-content a {
+        display: inline;
+        line-height: var(--nav-height);
+        border: none;
+        text-align: end;
+        margin: 0 16px;
+    }
+
+    .lessons-wrapper {
+        width: fit-content;
+    }
+
+    .preview-section .description {
+        width: 650px;
+    }
+
+    .box-wrapper {
+        display: flex;
+    }
+
+    .kost {
+        width: calc(450px - 33px * 2);
+    }
+
+    .workshop-section-content-wrapper {
+        display: flex;
+    }
+    .workshop-section-content-wrapper .workshop-section-content-box h3 {
+        margin-top: 0;
+    }
+    .workshop-section-content-box:not(:first-child) {
+        margin-left: 100px;
+    }
+    .workshop-section-content-box .video-player {
+        width: 583px;
+        height: 328px;
+    }
+
+    .team-pic-container {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        height: 376px;
+    }
+    .team-pic-wrapper {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .content-section.lees-meer-section * {
+        text-align: start;
+    }
+    .lees-meer-section .content {
+        display: flex;
+    }
+
+    footer p:nth-of-type(even) {
+        text-align: right;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        -ms-flex-wrap: row-wrap;
+        align-content:flex-start;
+        width: calc(100% - 200px);
+        padding: 60px 100px;
+    }
+    footer p {
+        width: 50%;
+    }
+
+}

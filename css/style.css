@@ -1,0 +1,551 @@
+:root  {
+    --content-padding: 100px;
+    --content-width: 1366px;
+    --h-space-sm-desktop: 33px;
+    --h-space-lg-desktop: 100px;
+    --v-space-sm-mobile: 33px;
+    --text-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    --drop-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+    --drop-shadow-half: 0px 2px 4px 1px rgba(0,0,0,0.2);
+    --drop-shadow-low: 0px 1px 2px 1px rgba(0,0,0,0.2);
+    --hard-shadow: 10px 10px 0px 1px #000000;
+    --hard-shadow-half: 5px 5px 0px 1px #000000;
+    --box-padding: 33px;
+    --box-sm-width: 356px;
+    --video-width: 1034px;
+    --nav-height: 100px;
+    --page-scrollbar-width: 40px;
+    --img-card-width: var(--box-sm-width);
+}
+
+/* #region Font Faces */
+
+/* Load in custom fonts here */
+@font-face {
+    font-family: Cagliostro;
+    src: url(/fonts/Cagliostro-Regular.ttf);
+}
+
+/* luckiest guy, or bangers font */
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('/fonts/LuckiestGuy-Regular.woff2') format('woff2'),
+        url('/fonts/LuckiestGuy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/CenturyGothic.woff2') format('woff2'),
+        url('/fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* #endregion Font Faces */
+
+/* #region General Font */
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+}
+
+body {
+    position: relative;
+}
+
+body * {
+    font-family: 'Century Gothic';
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Luckiest Guy';
+    font-weight: normal;
+    letter-spacing: 0;
+    text-shadow: var(--text-shadow);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.4rem;
+    margin-top: 100px;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 3.4rem;
+}
+.mp-h2 {
+    margin: 0;
+    font-size: 2em;
+}
+h3 {
+    margin: 33px auto 33px auto;
+    text-align: center;
+    font-size: 1.9rem;
+}
+.font-bold,
+.font-bold * {
+    font-family: 'Luckiest Guy';
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+.font-2rem,
+.font-2rem * {
+    font-size: 2rem;
+}
+.font-white,
+.font-white * {
+    color: #fff;
+}
+.font-shadow {
+    text-shadow: var(--text-shadow);
+}
+.font-bg-highlight,
+.font-bg-highlight * {
+    background-color: #4488c7;
+}
+
+/* #endregion General Font */
+
+/* #region General Utilities */
+
+.h-space-lg-desktop:not(:first-child) {
+    margin-left: var(--h-space-lg-desktop);
+}
+.h-space-sm-desktop:not(:first-child) {
+    margin-left: var(--h-space-sm-desktop);
+}
+.v-space-sm-mobile:not(:first-child) {
+    margin-top: var(--v-space-sm-mobile);
+}
+
+.drop-shadow {
+    -webkit-box-shadow: var(--drop-shadow);
+    box-shadow: var(--drop-shadow);
+}
+
+.align-left {
+    text-align: start;
+}
+
+.video-player-wrapper {
+    position: relative;
+    margin: 100px auto 100px;
+    height: 582px;
+    /* width: 1034px; */
+}
+
+.video-player {
+    margin: 0 auto;
+    width: var(--video-width);
+    height: calc((9 / 16) * var(--video-width));
+}
+
+.section-bg-img-a {
+    background: url(/img/bg-lessons-section.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.star-bg-img {
+    background: url(/img/star-bg.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.box-sm.img-card {
+    padding: 0;
+    width: var(--img-card-width);
+}
+.img-card img {
+    width: var(--img-card-width);
+}
+
+.img-card .font-bold {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+}
+
+.img-card p {
+    padding: 1.5rem 0;
+}
+
+/* #endregion Layout Utilities */
+
+/* #region Content Section */
+
+.content-section {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.content {
+    position: relative;
+    width: calc(var(--content-width) - var(--content-padding) * 2);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    margin: 0 auto;
+}
+
+.box-wrapper {
+    position: relative;
+    margin: auto; /* 29px auto; */
+    width: fit-content;
+}
+.box-sm {    
+    background: #fff;
+    position: relative;
+    width: calc(var(--box-sm-width) - var(--box-padding) * 2);
+    padding: 33px;
+}
+
+/* #endregion Content Section */
+
+/* #region Controls */
+
+.elevated-button {
+    font-family: 'Luckiest Guy';
+    color: #fff;
+    -webkit-box-shadow: var(--hard-shadow);
+    box-shadow: var(--hard-shadow);
+    padding: 15px 20px;
+    margin: auto;
+    background-color: #4488c7;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+    letter-spacing: 0;
+}
+
+.elevated-button:focus,
+.elevated-button:hover {
+    -webkit-box-shadow: var(--hard-shadow-half);
+    box-shadow: var(--hard-shadow-half);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.elevated-button:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.rounded-button {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    border-radius: .5rem;
+    -webkit-box-shadow: var(--drop-shadow);
+    box-shadow: var(--drop-shadow);
+    align-content: center;
+    line-height: 3.25rem;
+    padding-left: 1rem;
+    padding-right: 3.5rem;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: .5rem;
+}
+.rounded-button::after {
+    font-size: 2rem;
+    content: '\279C';
+    position: absolute;
+    top: 0;
+    right: .75rem;
+    margin: auto;
+    line-height: 3.2rem;
+}
+.rounded-button:focus,
+.rounded-button:hover {
+    -webkit-box-shadow: var(--drop-shadow-half);
+    box-shadow: var(--drop-shadow-half);
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+.rounded-button:active {
+    -webkit-box-shadow: var(--drop-shadow-low);
+    box-shadow: var(--drop-shadow-low);
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+}
+
+/* #endregion Controls */
+
+/* #region Nav */
+
+nav {
+    width: 100%;
+    height: var(--nav-height);
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    position: absolute;
+    right: 0;
+}
+
+a.logo {
+    position: absolute;
+    display: block;
+    left: 0;
+    margin: 20px 0 20px 40px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+
+img.logo {
+    border: 1px solid #000;
+    padding: 2px;
+    height: calc(60px - 4px);
+    width: calc(60px - 4px);
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    height: var(--nav-height);
+    width: 100%;
+    transition: height ease-in-out .2s;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background: #fff;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.dropbtn img {
+    width: 60px;
+    height: 60px;
+}
+
+.dropdown-content {
+    top: var(--nav-height);
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    transition: height ease-in-out .2s;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+.dropdown-content a:not(:first-child) {
+    border-top: 1px solid #000;
+    margin: 0 33px;
+}
+
+.dropdown:hover > .dropdown-content,
+.dropbtn:hover + .dropdown-content,
+.dropbtn:active + .dropdown-content,
+.dropbtn:focus + .dropdown-content {
+    height: calc(60px * 4 + 10px);
+    -webkit-box-shadow: 0px 4px 4px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 4px 1px rgba(0,0,0,0.2);
+}
+
+
+.dropdown .dropdown-content a:hover,
+.dropdown .dropdown-content a:focus,
+.dropdown .dropdown-content a:active {
+    text-decoration: underline;
+}
+
+/* #endregion Nav */
+
+/* #region Section: Wat Leer Je */
+
+.wat-leer-je-section h2 {
+    position: relative;
+    text-align: center;
+    font-size: 3.4rem;
+}
+.wat-leer-je-section .box-sm {
+    height: 360px;
+}
+
+/* #endregion Section Wat Leer Je */
+
+/* #region Section: Kosten */
+
+.content-section.kosten-section * {
+    text-align: start;
+}
+.content-section.kosten-section p {
+    padding-bottom: 33px;
+}
+.kost {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+}
+
+/* #endregion Kosten Section */
+
+/* #region Section: Workshop */
+
+.workshop-section {
+    position: relative;
+    background: #131313;
+}
+
+.workshop-section h2 {
+    text-align: start;
+    font-size: 3.4rem;
+    margin-bottom: 0;
+}
+
+.workshop-section * {
+    color: white;
+    text-align: start;
+}
+.workshop-section p {
+    font-size: 1.75rem;
+}
+
+.workshop-section-content-wrapper:first-of-type {
+    margin-top: 100px;
+}
+
+.workshop-section-content-wrapper:not(:first-of-type) {
+    margin-top: 166px;
+}
+
+/* #endregion Section: Workshop */
+
+/* #region Section: Team */
+
+.team-section h2 {
+    margin: auto;
+    margin-bottom: 66px;
+}
+
+.team-pic-padding {
+    padding: 16px;
+}
+
+.team-pic {
+    position: relative;
+    background: #fff;
+    width: 258px;
+    height: 376px;
+    background-image: url(/img/tim.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-pic h3 {
+    position: absolute;
+    bottom: 0;
+    /* margin: auto; */
+    margin-bottom: 0;
+}
+
+/* #endregion Section: Team */
+
+/* #region Footer */
+
+
+footer {
+    position: relative;
+    background: #131313;
+    width: calc(100% - 33px * 2);
+    padding: 60px 33px;
+}
+
+footer p,
+footer a {
+    color: #fff;
+    font-size: 1em;
+    text-align: start;
+}
+
+footer .font-bold {
+    font-size: 1.25rem;
+}
+
+/* #endregion Footer */
+
+/* #region Section: Showcase */
+
+.content-section.showcase-section {
+    margin-top: var(--nav-height);
+}
+
+.content-section.showcase-section,
+.showcase-section .content {
+    width: 100%;
+    padding: 0;
+    height: calc((9 / 16) * 100vw);
+    max-height: 333px;
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+}
+
+.showcase-section img {
+    height: 100%;
+}
+
+/* #endregion Section: Showcase */
+
+/* #region Section: Preview */
+
+.preview-section h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+.preview-section h2 {
+    margin: 70px auto;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.preview-section .description {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20pt;
+}
+.preview-section .video-player {
+    margin: 100px auto;
+}
+
+/* #endregion Section: Preview */
