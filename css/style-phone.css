@@ -61,4 +61,55 @@
     .team-pic-wrapper {
         position: relative;
     }
+
+    .custom-width {
+        width: auto;
+    }
+
+    .team-pic2 {
+        position: relative;
+        background: #fff;
+        width: 258px;
+        height: 376px;
+        background-image: url(/img/isis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-pic1 {
+        position: relative;
+        background: #fff;
+        width: 258px;
+        height: 376px;
+        background-image: url(/img/Sebgreefkens.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-pic3 {
+        position: relative;
+        background: #fff;
+        width: 258px;
+        height: 376px;
+        background-image: url(/img/ridvann.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }

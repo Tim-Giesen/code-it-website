@@ -17,6 +17,7 @@
 
     h1 {
         font-size: 3.2rem;
+        width: 400px;
     }
     h2 {
         font-size: 2rem;
@@ -57,6 +58,20 @@
         align-content: center;
     }
 
+    .team-pic2 {
+        position: relative;
+        background: #fff;
+        width: 258px;
+        height: 376px;
+        background-image: url(/img/isis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
