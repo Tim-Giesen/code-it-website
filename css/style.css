@@ -22,7 +22,7 @@
 /* Load in custom fonts here */
 @font-face {
     font-family: Cagliostro;
-    src: url(/fonts/Cagliostro-Regular.ttf);
+    src: url(fonts/Cagliostro-Regular.ttf);
 }
 
 @font-face {
@@ -166,14 +166,14 @@ h3 {
 }
 
 .section-bg-img-a {
-    background: url(/img/bg-lessons-section.png);
+    background: url(img/bg-lessons-section.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .star-bg-img {
-    background: url(/img/star-bg.png);
+    background: url(img/star-bg.png);
     background-repeat: repeat;
     background-position: center;
 }
@@ -468,7 +468,7 @@ img.logo {
     background: #fff;
     width: 258px;
     height: 376px;
-    background-image: url(/img/ikke.jpg);
+    background-image: url(img/ikke.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -482,7 +482,7 @@ img.logo {
     background: #fff;
     width: 258px;
     height: 376px;
-    background-image: url(/img/Sebgreefkens.jpg);
+    background-image: url(img/Sebgreefkens.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -496,7 +496,7 @@ img.logo {
     background: #fff;
     width: 258px;
     height: 376px;
-    background-image: url(/img/isis.jpg);
+    background-image: url(img/isis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -510,7 +510,7 @@ img.logo {
     background: #fff;
     width: 258px;
     height: 376px;
-    background-image: url(/img/ridvann.jpg);
+    background-image: url(img/ridvann.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
